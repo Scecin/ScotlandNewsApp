@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/general_section"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/pillar_name_rectangle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:textSize="16sp"
+        tools:text="Sport">
+
+
+        <TextView
+            android:id="@+id/section_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            tools:text="Football" />
+
+        <TextView
+            android:id="@+id/pillar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="Sport" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        tools:text="Nadal won"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_alignTop="@id/general_section"
+        android:layout_toRightOf="@id/general_section"/>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/general_section"
+        android:layout_alignStart="@id/title"
+        android:textSize="12sp"
+        tools:text="Feb 6, 2021" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/general_section"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:textSize="12sp"
+        tools:text="6:59 PM" />
+</RelativeLayout>
